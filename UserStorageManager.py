@@ -8,6 +8,13 @@ class UserStorageManager:
 
     def findUserByUsername(username: str):
         #Seraches the userProfiles list for a spefific username.
-        #Call a username already exists error if it exists
+        #Set AuthenticationManager's registration status to "USER_ALREADY_EXISTS and 
+        # call a username already exists error if it exists
         #Call saveUserToDatabase() if it does not exist
+        return
+    
+    def saveUserToDatabase(userProfile: UserProfile):
+        #Saves the user to the database
+        #If it's successful, set AuthenticationManager's registration to "SUCCESS", call transitionToHomeView()
+        #Otherwise, set it to "UNKNOWN_ERROR", call displayError()
         return
