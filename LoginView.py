@@ -42,3 +42,6 @@ class LoginView:
         #Displays an error message to the user
         return
         
+    def transitionToHomeView(userProfile: UserProfile):
+        #Go to the home page for a specific user
+        return

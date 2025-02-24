@@ -5,6 +5,8 @@ class AuthenticationManager:
         #Constructor, pass all necessary values
         self.userProfile = None
         self.password = ""
+        self.statusList = ["USER_ALREADY_EXISTS", "SUCCESS", "UNKNOWN_ERROR"]
+        self.registrationStatus = ""
         pass
 
     def validateUsername(username: str) -> bool:
