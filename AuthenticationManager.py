@@ -3,8 +3,8 @@ from UserProfile import UserProfile
 class AuthenticationManager:
     def __init__(self):
         #Constructor, pass all necessary values
-        self.userProfile = None
-        self.password = ""
+        self.__userProfile = None
+        self.__password = ""
         self.statusList = ["USER_ALREADY_EXISTS", "SUCCESS", "UNKNOWN_ERROR"]
         self.registrationStatus = ""
         pass
