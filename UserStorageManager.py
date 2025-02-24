@@ -3,7 +3,7 @@ from UserProfile import UserProfile
 class UserStorageManager:
     def __init__(self):
         #Constructor, pass all necessary values
-        self.userProfiles = []
+        self.__userProfiles = []
         pass
 
     def findUserByUsername(username: str):
@@ -13,7 +13,7 @@ class UserStorageManager:
         #Call saveUserToDatabase() if it does not exist
         return
     
-    def saveUserToDatabase(userProfile: UserProfile):
+    def __saveUserToDatabase(userProfile: UserProfile):
         #Saves the user to the database
         #If it's successful, set AuthenticationManager's registration to "SUCCESS", call transitionToHomeView()
         #Otherwise, set it to "UNKNOWN_ERROR", call displayError()

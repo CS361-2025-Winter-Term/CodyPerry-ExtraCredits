@@ -6,11 +6,11 @@ from NotificationPreferences import NotificationPreferences
 class LoginView:
     def __init__(self):
         #Constructor, pass all necessary values
-        self.username = ""
-        self.password = ""
-        self.email = ""
-        self.frequency = None
-        self.notificationPreferences = None
+        self.__username = ""
+        self.__password = ""
+        self.__email = ""
+        self.__frequency = None
+        self.__notificationPreferences = None
 
         pass
 
